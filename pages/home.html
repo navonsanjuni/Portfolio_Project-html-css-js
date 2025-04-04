@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Home</title>
     <link rel="stylesheet" href="../assests/css/home.css">
+    <script src="../assests/js/script.js" defer></script>
     <link rel="stylesheet" href="../assests/css/about.css">
     <link rel="stylesheet" href="../assests/css/project.css">
     <link rel="stylesheet" href="../assests/css/education.css">
     <link rel="stylesheet" href="../assests/css/blogs.css">
     <link rel="stylesheet" href="../assests/css/contact.css">
+    <link rel="stylesheet" href="../assests/css/footer.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -21,9 +23,9 @@
             <li><a href="#" >Home</a></li>
             <li><a href="#about-section">About</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#">Blogs</a></li>
+            <li><a href="#blogs">Blogs</a></li>
             <li><a href="#projects-section">Projects</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
     </nav>
 
@@ -31,8 +33,10 @@
     <section class="hero">
         <div class="hero-content">
             <h1 class="animate-text">Hi! I'm Navon Sanjuni</h1>
-            <h2 class="animate-text">And I'm <span class="highlight">Full Stack Developer</span></h2>
-            <p class="animate-text">Product Designer and Digital Creative Director working in design field for 10 years so far,specialized in UI/UX, Branding and digital designs.</p>
+            <h2 class="animate-text">
+                And I'm <span id="position" class="highlight"></span>
+            </h2>
+            <p id="description" class="animate-text"></p>
             
             <div class="contact-info animate-text">
                 <div class="info-item">
@@ -43,16 +47,11 @@
             </div>
 
             <div class="cta-buttons animate-text">
-                <a href="#" class="btn btn-primary">Download CV</a>
-                <a href="#" class="btn btn-secondary">Hire Me Now!</a>
+                <a href="../assests/images/SE-2021-061 Sanjuni cv.pdf" class="btn btn-primary">Download CV</a>
+                <a href="#contact" class="btn btn-secondary">Hire Me Now!</a>
             </div>
 
-            <div class="social-links animate-text">
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-            </div>
+           
         </div>
         
         <div class="hero-image">
@@ -66,17 +65,14 @@
                 <img src="../assests/images/My_pic11.jpg" alt="Profile Image">
                 <div class="experience-badges">
                     <div class="badge">
-                        <span class="number">2+</span>
+                        <span class="number">1+</span>
                         <span class="label">Years of Experience</span>
                     </div>
                     <div class="badge">
-                        <span class="number">50+</span>
+                        <span class="number">5+</span>
                         <span class="label">Projects Complete</span>
                     </div>
-                    <div class="badge">
-                        <span class="number">100+</span>
-                        <span class="label">Happy Clients</span>
-                    </div>
+                   
                 </div>
             </div>
             
@@ -92,7 +88,7 @@
                             <h4>Frontend Development</h4>
                             <ul>
                                 <li>HTML5, CSS3, JavaScript (ES6+)</li>
-                                <li>React.js, Angular</li>
+                                <li>React.js</li>
                                 <li>Bootstrap, Tailwind CSS</li>
                                 <li>Responsive Web Design</li>
                             </ul>
@@ -100,8 +96,8 @@
                         <div class="skill-category">
                             <h4>Backend Development</h4>
                             <ul>
-                                <li>Node.js, Express.js</li>
-                                <li>Python, Django</li>
+                                <li>Node.js</li>
+                                <li>Spring Boot</li>
                                 <li>RESTful APIs</li>
                                 <li>Database Management</li>
                             </ul>
@@ -109,10 +105,10 @@
                         <div class="skill-category">
                             <h4>Database & Tools</h4>
                             <ul>
-                                <li>MongoDB, MySQL</li>
+                                <li>MySQL</li>
                                 <li>Git, GitHub</li>
-                                <li>Docker</li>
-                                <li>AWS Services</li>
+                                
+                                
                             </ul>
                         </div>
                     </div>
@@ -204,7 +200,7 @@
                     <p class="blog-excerpt">
                         Software licensing is a fundamental aspect of the software industry, governing how software can be used, modified, and...
                     </p>
-                    <a href="#" class="read-more1">Read More <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://medium.com/@navonsanjuni178/navigating-the-landscape-of-software-licensing-and-intellectual-property-rights-6b659f0b6774" class="read-more1">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
     
@@ -217,13 +213,13 @@
                 <div class="blog-content">
                     <div class="blog-info">
                         <span class="date">Feb 23, 2024</span>
-                        <span class="read-time">6 min read</span>
+                       
                     </div>
                     <h3 class="blog-title">Stored Procedures in MySQL</h3>
                     <p class="blog-excerpt">
                         MySQL procedures are a pivotal aspect of database management, offering a robust mechanism for encapsulating and...
                     </p>
-                    <a href="#" class="read-more1">Read More <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://medium.com/@navonsanjuni178/stored-procedures-in-mysql-bc8325da21f4" class="read-more1">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
     
@@ -236,13 +232,13 @@
                 <div class="blog-content">
                     <div class="blog-info">
                         <span class="date">Dec 31, 2023</span>
-                        <span class="read-time">5 min read</span>
+                        
                     </div>
                     <h3 class="blog-title">Job Roles in Data Management</h3>
                     <p class="blog-excerpt">
                         1.Database Administrator - Exploring the essential roles and responsibilities in modern data management...
                     </p>
-                    <a href="#" class="read-more1">Read More <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://medium.com/@navonsanjuni178/job-roles-in-data-management-f99c1841cf59" class="read-more1">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
     
@@ -255,13 +251,12 @@
                 <div class="blog-content">
                     <div class="blog-info">
                         <span class="date">Oct 2, 2023</span>
-                        <span class="read-time">7 min read</span>
                     </div>
                     <h3 class="blog-title">CIA Triad in Cyber Security</h3>
                     <p class="blog-excerpt">
                         Understanding the fundamental principles of Confidentiality, Integrity, and Availability in cyber security...
                     </p>
-                    <a href="#" class="read-more1">Read More <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://medium.com/@navonsanjuni178/title-cia-triad-in-cyber-security-41933be6a48f" class="read-more1">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
         </div>
@@ -288,32 +283,12 @@
                 </div>
                 <div class="port-content">
                     <h3>Restaurant Web Design Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                    <p>A visually appealing and responsive website designed for a restaurant, featuring an interactive menu and online reservation system.</p>
                     <a href="#" class="btn">View Project</a>
                 </div>
             </div>
 
-            <div class="port-box">
-                <div class="port-image">
-                    <img src="../assests/images/Project1.jpg" alt="Project 1">
-                </div>
-                <div class="port-content">
-                    <h3>Todo Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
-
-            <div class="port-box">
-                <div class="port-image">
-                    <img src="../assests/images/Project2.jpg" alt="Project 1">
-                </div>
-                <div class="port-content">
-                    <h3>E-Commerce Web Design Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
+        
 
             <div class="port-box">
                 <div class="port-image">
@@ -321,7 +296,7 @@
                 </div>
                 <div class="port-content">
                     <h3>Fuel Management Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                    <p>A system designed to monitor and manage fuel consumption efficiently for businesses and individuals.</p>
                     <a href="#" class="btn">View Project</a>
                 </div>
             </div>
@@ -332,21 +307,34 @@
                 </div>
                 <div class="port-content">
                     <h3>Portfolio Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                    <p>A personal portfolio website showcasing skills, projects, and achievements in a professional layout.</p>
+                    <a href="https://github.com/navonsanjuni/Portfolio_Project-html-css-js.git" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="../assests/images/Project2.jpg" alt="Project 1">
+                </div>
+                <div class="port-content">
+                    <h3>E-Commerce Web Design Project</h3>
+                    <p>An e-commerce platform with a user-friendly interface for browsing and purchasing products online.</p>
                     <a href="#" class="btn">View Project</a>
                 </div>
             </div>
 
             <div class="port-box">
                 <div class="port-image">
-                    <img src="../assests/images/Project.jpg" alt="Project 1">
+                    <img src="../assests/images/Project1.jpg" alt="Project 1">
                 </div>
                 <div class="port-content">
-                    <h3>web Design  Project</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                    <h3>Todo Project</h3>
+                    <p>A task management application to help users organize and prioritize their daily activities effectively.</p>
                     <a href="#" class="btn">View Project</a>
                 </div>
             </div>
+
+           
 
            </div>
 
@@ -366,21 +354,21 @@
                     <i class="fas fa-envelope"></i>
                     <div class="info-content">
                         <h3>Email</h3>
-                        <p>youremail@example.com</p>
+                        <p>navonsanjuni178@gmail.com</p>
                     </div>
                 </div>
                 <div class="info-item1">
                     <i class="fas fa-phone"></i>
                     <div class="info-content">
                         <h3>Phone</h3>
-                        <p>+1 234 567 8900</p>
+                        <p>+94 71 6675291</p>
                     </div>
                 </div>
                 <div class="info-item1">
                     <i class="fas fa-location-dot"></i>
                     <div class="info-content">
                         <h3>Location</h3>
-                        <p>Your City, Country</p>
+                        <p>Kelaniya, Sri Lanka</p>
                     </div>
                 </div>
             </div>
