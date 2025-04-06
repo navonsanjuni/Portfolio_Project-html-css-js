@@ -3,8 +3,8 @@
     --dark-bg: #1a1a1a;
     --text-color: #ffffff;
     --gradient-bg: linear-gradient(135deg, #2d1b4e, #1a1a1a);
-    --card-bg: rgba(25, 15, 44, 0.7);
-    --text-secondary: #b3b3b3;
+    --card-bg: rgba(255, 255, 255, 0.05); /* Added missing variable */
+    --text-secondary: rgba(255, 255, 255, 0.7); /* Added missing variable */
 }
 
 .blogs {
@@ -154,6 +154,20 @@
     box-shadow: 0 5px 15px rgba(233, 187, 70, 0.3);
 }
 
+.read-more1 i {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.read-more1:hover i {
+    gap: 1rem;
+    opacity: 0.9;
+}
 
 .read-more1 i {
     font-size: 0.9rem;
