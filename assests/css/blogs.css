@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #e9bb46;
+    --primary-color: linear-gradient(135deg, #e9bb46, #d9a63c, #b88a2e); /* Gradient for primary color */
     --dark-bg: #1a1a1a;
     --text-color: #ffffff;
     --gradient-bg: linear-gradient(135deg, #2d1b4e, #1a1a1a);
@@ -136,15 +136,17 @@
 
 /* Read More Link */
 .read-more1 {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    background: transparent;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* Add spacing between text and icon */
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-color);
+    color: var(--dark-bg);
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 2rem;
-    transition: all 0.3s;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .read-more1:hover {
