@@ -80,11 +80,26 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
+    
 }
+
+h2.animate-text {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    display: flex; 
+    align-items: center; 
+    gap: 8px;
+}
+
+
 
 .highlight {
     color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block; 
 }
+
 
 .hero-content p {
     color: #a9a9a9;
@@ -92,6 +107,50 @@ h2 {
     margin-bottom: 2rem;
     max-width: 90%;
 }
+
+#position {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--primary-color);
+    animation: typing 2s steps(20, end), blink 0.5s step-end infinite alternate;
+    min-width: 285px;
+    
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 285%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: var(--primary-color);
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+
+#description {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 /* Contact Info */
 .contact-info {
@@ -108,6 +167,7 @@ h2 {
     text-decoration: none;
     margin-left: 0.5rem;
 }
+
 
 /* Buttons */
 .cta-buttons {

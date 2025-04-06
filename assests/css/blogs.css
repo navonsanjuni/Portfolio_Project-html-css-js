@@ -3,8 +3,8 @@
     --dark-bg: #1a1a1a;
     --text-color: #ffffff;
     --gradient-bg: linear-gradient(135deg, #2d1b4e, #1a1a1a);
-    --card-bg: rgba(33, 29, 40, 0.7);
-    --text-secondary: #b3b3b3;
+    --card-bg: rgba(255, 255, 255, 0.05); /* Added missing variable */
+    --text-secondary: rgba(255, 255, 255, 0.7); /* Added missing variable */
 }
 
 .blogs {
@@ -136,6 +136,25 @@
 
 /* Read More Link */
 .read-more1 {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: all 0.3s;
+}
+
+.read-more1:hover {
+    background: var(--primary-color);
+    color: var(--dark-bg);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(233, 187, 70, 0.3);
+}
+
+.read-more1 i {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 500;
@@ -145,12 +164,12 @@
     transition: all 0.3s ease;
 }
 
-.read-more:hover {
+.read-more1:hover i {
     gap: 1rem;
     opacity: 0.9;
 }
 
-.read-more i {
+.read-more1 i {
     font-size: 0.9rem;
 }
 
