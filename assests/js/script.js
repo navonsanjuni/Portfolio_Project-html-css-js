@@ -35,3 +35,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateContent();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll(".filter-buttons .btn");
+    const skillCategories = document.querySelectorAll(".skill-category");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const filter = button.getAttribute("data-filter");
+
+            skillCategories.forEach(skill => {
+                if (filter === "all" || skill.classList.contains(filter)) {
+                    skill.classList.remove("hidden");
+                } else {
+                    skill.classList.add("hidden");
+                }
+            });
+        });
+    });
+});
